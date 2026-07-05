@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  ACADEMIC HOMEPAGE — Pradnya Jadhav  ·  for username.github.io
+  ------------------------------------------------------------
+  TO FINISH:
+    • Add  photo.jpg  next to this file (shows in the top-left; hides itself if missing)
+    • Double-check the teaching semester labels below (my best guess from your CV)
+  Save as index.html in a repo named  yourusername.github.io
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradnya Jadhav</title>
+  <meta name="description" content="Pradnya Jadhav — incoming PhD student at Carnegie Mellon University and the University of Pittsburgh School of Medicine." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --muted: #6b6b70;
+      --accent: #b45f3f;
+      --rule: #e7e6e3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#16171a; --fg:#e8e8ea; --muted:#9a9aa0; --accent:#e08a63; --rule:#2a2b30; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px; line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: 720px; margin: 0 auto; padding: 3.5rem 1.5rem 3rem; }
+
+    /* header */
+    .head { display: flex; gap: 1.6rem; align-items: center; flex-wrap: wrap; }
+    .photo {
+      width: 130px; height: 130px; border-radius: 50%; object-fit: cover;
+      flex-shrink: 0; border: 1px solid var(--rule);
+    }
+    h1 { font-size: 2.1rem; margin: 0 0 .35rem; font-weight: 700; letter-spacing: -.02em; }
+    .tagline { margin: 0; color: var(--muted); font-size: 1.02rem; }
+    .toplinks { margin-top: .8rem; display: flex; flex-wrap: wrap; gap: .3rem .9rem; font-size: .95rem; }
+
+    /* sections */
+    section { margin-top: 2.6rem; }
+    h2 {
+      font-size: 1.15rem; font-weight: 700; margin: 0 0 1rem;
+      padding-bottom: .4rem; border-bottom: 2px solid var(--rule);
+    }
+    p { margin: 0 0 1rem; }
+
+    /* entry rows */
+    .entry { margin-bottom: 1rem; }
+    .entry .line1 { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .entry .role { font-weight: 600; }
+    .entry .date { color: var(--muted); font-size: .9rem; white-space: nowrap; }
+    .entry ul { margin: .35rem 0 0; padding-left: 1.15rem; color: var(--muted); font-size: .96rem; }
+    .entry li { margin-bottom: .25rem; }
+
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+             color: var(--muted); font-size: .82rem; }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header class="head">
+      <!-- Add photo.jpg beside this file; it hides itself if not found. -->
+      <img class="photo" src="photo.jpg" alt="Pradnya Jadhav" onerror="this.style.display='none'" />
+      <div>
+        <h1>Pradnya Jadhav</h1>
+        <div class="toplinks">
+          <a href="mailto:prjadhav@andrew.cmu.edu">Email</a>
+          <a href="https://github.com/pradnyajadhav362">GitHub</a>
+          <a href="https://www.linkedin.com/in/pradnya-jadhav-13836b244/">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi! I'm an incoming PhD student at Carnegie Mellon University's School of Computer Science and the University of Pittsburgh School of Medicine. I'll be working on interpretable machine learning, protein language models, and agentic and responsible AI for immunology.</p>
+      <p>Please feel free to reach out if you have ideas to discuss or just want to have a chat :)</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="line1"><span><span class="role">Graduate Research Assistant</span>, Computational Systems Immunology Lab, University of Pittsburgh</span><span class="date">Dec 2024 – Present</span></div>
+      </div>
+      <div class="entry">
+        <div class="line1"><span><span class="role">Data Science and AI Research Intern</span>, PwC Product &amp; Tech Labs</span><span class="date">Jan – Jun 2024</span></div>
+      </div>
+      <div class="entry">
+        <div class="line1"><span><span class="role">Decision Science and ML Research Intern</span>, American Express AI Labs</span><span class="date">Jul – Dec 2023</span></div>
+      </div>
+      <div class="entry">
+        <div class="line1"><span><span class="role">Undergraduate Researcher</span>, BITS Pilani</span><span class="date">Aug 2020 – Dec 2023</span></div>
+      </div>
+      <div class="entry">
+        <div class="line1"><span><span class="role">Data Engineering Intern</span>, Accenture AI Services and Solutions</span><span class="date">May – Jul 2021</span></div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+
+      <!-- ⟨EDIT: confirm the semester labels below⟩ -->
+      <div class="entry">
+        <div class="line1"><span><span class="role">Introduction to Computational Biology</span> — Graduate Teaching Assistant, CMU SCS</span><span class="date">Spring 2025</span></div>
+      </div>
+
+      <div class="entry">
+        <div class="line1"><span><span class="role">Pre-College Computational Biology Program</span> — Teaching Assistant, CMU</span><span class="date">Summer 2025</span></div>
+      </div>
+
+      <div class="entry">
+        <div class="line1"><span><span class="role">Algorithms and Advanced Data Structures</span> — Graduate Teaching Assistant, CMU SCS</span><span class="date">Fall 2025 &amp; Spring 2026</span></div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Pradnya Jadhav
+    </footer>
+
+  </div>
+</body>
+</html>
