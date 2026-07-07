@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog · Pradnya Jadhav</title>
+  <style>
+    :root {
+      --clay: #b0684f;
+      --ink: #2b2b2b;
+      --muted: #6b6b6b;
+      --bg: #fdfcfa;
+      --maxw: 700px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 20px;
+    }
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+    header .nav {
+      font-size: 0.95rem;
+    }
+    header .nav a {
+      color: var(--clay);
+      text-decoration: none;
+    }
+    header .nav a:hover { text-decoration: underline; }
+    .intro {
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+    figure {
+      margin: 0 0 56px;
+      text-align: center;
+    }
+    figure img {
+      width: 100%;
+      max-width: var(--maxw);
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+    }
+    figcaption {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Blog</h1>
+      <div class="nav"><a href="index.html">&larr; Back to home</a></div>
+    </header>
+
+    <figure>
+      <img src="images/bits-pilani-graduation.jpg" alt="">
+      <figcaption>BITS Pilani graduation</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/cmu-graduation.jpg" alt="">
+      <figcaption>Carnegie Mellon Master's graduation</figcaption>
+    </figure>
+
+  </div>
+</body>
+</html>
